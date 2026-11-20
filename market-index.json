@@ -1,0 +1,43 @@
+{
+  "format": 1,
+  "title": "Compact Sidebar",
+  "plugins": [
+    {
+      "name": "@local/dsh-compact-sidebar",
+      "title": {
+        "en": "Compact interface",
+        "ru": "Компактный интерфейс"
+      },
+      "description": {
+        "en": "Custom project groups, horizontal + New and panel icons, no branding, and a 90% workspace list. Conversation scale stays unchanged.",
+        "ru": "Произвольные группы проектов, «+ New» и иконки панелей горизонтальным рядом, список в масштабе 90% и без логотипа. Масштаб чата не меняется."
+      },
+      "icon": "https://raw.githubusercontent.com/xSpiRUSx/dsh-compact-sidebar/1828dc5e6d61af473d33519e13f59be65324ae92/icon.svg",
+      "author": "xSpiRUSx",
+      "repository": {
+        "url": "https://github.com/xSpiRUSx/dsh-compact-sidebar"
+      },
+      "metadata": {
+        "keywords": [
+          "compact-sidebar",
+          "sidebar",
+          "workspaces"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.4.1",
+          "publishTimestamp": 1795160926,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/xSpiRUSx/dsh-compact-sidebar",
+            "commit": "1828dc5e6d61af473d33519e13f59be65324ae92"
+          },
+          "engines": {
+            "dsh": "0.2.2-rc.2 || 0.2.2-rc.3"
+          }
+        }
+      ]
+    }
+  ]
+}
