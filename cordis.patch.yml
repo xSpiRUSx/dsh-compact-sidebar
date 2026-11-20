@@ -1,0 +1,4 @@
+- insert:
+    - id: local-compact-sidebar
+      name: '@local/dsh-compact-sidebar'
+      config: {}

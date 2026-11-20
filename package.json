@@ -1,0 +1,29 @@
+{
+  "name": "@local/dsh-compact-sidebar",
+  "version": "1.4.1",
+  "private": true,
+  "description": "Compact interface with custom project groups, horizontal panel icons, + New and a denser workspace browser.",
+  "repository": { "type": "git", "url": "git+https://github.com/xSpiRUSx/dsh-compact-sidebar.git" },
+  "engines": { "dsh": "0.2.2-rc.2 || 0.2.2-rc.3" },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "groups-model.js", "groups-filter.js", "groups-store.js", "groups-native-view.js", "groups-client.js", "panels-client.js", "panels-hints.js", "build-client.mjs", "test/*.mjs", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
+  "scripts": {
+    "build": "node build-client.mjs",
+    "update-index": "node scripts/update-index.mjs",
+    "test": "node build-client.mjs --check && node --check index.js && node --check client.js && node --test"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-sidebar"]
+    }
+  }
+}
